@@ -1,14 +1,20 @@
 cmd: python code/eval.py
 deps:
 - path: code/eval.py
+  md5: c916569fcaef321098f6e6ebab29867f
 - path: data
+  md5: b6c29e96813679dd8c451c9b5ca86e2c.dir
 - path: models
+  md5: b708ecfd6d08e96b4b3a1efabbcba1ec.dir
 outs:
 - path: metrics/eval.json
   cache: false
   metric: true
   persist: false
+  md5: bbdd990eea3ce56ef517746e23346250
 - path: metrics/vega_confusion_matrix.json
   cache: false
   metric: true
   persist: false
+  md5: 63e594658869fa531b979b5225c76831
+md5: abe3abda41d5ac9a4a7b9b7b60fc1d54
