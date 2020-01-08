@@ -107,3 +107,4 @@ with tf.Session() as session:
     with open(os.path.join(dirname, '../metrics/vega_loss.json'), 'w') as outfile:
         json.dump(vega_loss(loss_metric), outfile)
 
+
