@@ -1,0 +1,14 @@
+cmd: python code/eval.py
+deps:
+- path: code/eval.py
+- path: data
+- path: models
+outs:
+- path: metrics/eval.json
+  cache: false
+  metric: true
+  persist: false
+- path: metrics/vega_confusion_matrix.json
+  cache: false
+  metric: true
+  persist: false

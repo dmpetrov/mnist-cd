@@ -1,0 +1,4 @@
+['remote "mys3"']
+url = s3://dvc-temp/dmitry/mnist
+[core]
+remote = mys3

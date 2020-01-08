@@ -1,0 +1,24 @@
+cmd: python code/train.py
+deps:
+- path: code/train.py
+outs:
+- path: data
+  cache: true
+  metric: false
+  persist: false
+- path: models
+  cache: true
+  metric: false
+  persist: false
+- path: metrics/train.json
+  cache: false
+  metric: true
+  persist: false
+- path: metrics/vega_acc.json
+  cache: false
+  metric: true
+  persist: false
+- path: metrics/vega_loss.json
+  cache: false
+  metric: true
+  persist: false
