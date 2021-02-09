@@ -1,24 +1,31 @@
 cmd: python code/train.py
 deps:
 - path: code/train.py
+  md5: f66827a4d8103e0baaab33d54318c44c
 outs:
 - path: data
   cache: true
   metric: false
   persist: false
+  md5: b6c29e96813679dd8c451c9b5ca86e2c.dir
 - path: models
   cache: true
   metric: false
   persist: false
+  md5: 32129ce8a96f9069075bdde66fc99ee6.dir
 - path: metrics/train.json
   cache: false
   metric: true
   persist: false
+  md5: 10985f0d67422a369e34b8839a41f81d
 - path: metrics/vega_acc.json
   cache: false
   metric: true
   persist: false
+  md5: cd9e83afb1f578bd4dd9d524e2373134
 - path: metrics/vega_loss.json
   cache: false
   metric: true
   persist: false
+  md5: 54a4c27a5805d7c5663a665b36154fc3
+md5: 2a49f8f2709ad69b7e09b04476ed0ddc
